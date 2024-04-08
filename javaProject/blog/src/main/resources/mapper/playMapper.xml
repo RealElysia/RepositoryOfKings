@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.elysia.mapping.playMapper">
+    <resultMap id="BaseResultMap" type="com.elysia.entity.player">
+        <result column="id" jdbcType="INTEGER" property="id"/>
+        <result column="user" jdbcType="VARCHAR" property="user" />
+        <result column="pwd" jdbcType="VARCHAR" property="pwd"/>
+    </resultMap>
+    <!-- 查询注册信息 -->
+    <select id="getInfo" resultType="com.elysia.entity.player" parameterType="int">
+        select * from players where id=#{id}
+    </select>
+    <!-- 删除信息 -->
+    <select id="deleteInfo" parameterType="int">
+        delete from players where id=#{id}
+    </select>
+    <!-- 新增信息 -->
+    <insert id="saveNew" parameterType="com.elysia.entity.player">
+        insert into players(id, user, pwd) values(#{id}, #{user}, #{pwd})
+    </insert>
+<!-- 修改信息 -->
+    <update id="updateInfo" parameterType="com.elysia.entity.player">
+        update user
+        <set >
+            <if test="user != null" >
+                userName = #{user,jdbcType=VARCHAR},
+            </if>
+            <if test="pwd != null" >
+                passWord = #{pwd,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+<!--查询所有信息-->
+    <select id="selectAll" resultType="com.elysia.entity.player">
+        select * from players
+    </select>
+</mapper>

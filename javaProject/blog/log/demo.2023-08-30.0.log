@@ -1,0 +1,476 @@
+16:34:46.039 [main] INFO  com.elysia.BlogApplication - Starting BlogApplication using Java 17.0.7 with PID 6549 (/Users/ayaka/Desktop/sakura/blog/target/classes started by ayaka in /Users/ayaka/Desktop/sakura/blog)
+16:34:46.042 [main] INFO  com.elysia.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+16:34:47.589 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+16:34:47.602 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+16:34:47.603 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:34:47.603 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+16:34:47.726 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:34:47.729 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1617 ms
+16:34:48.616 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+16:34:48.638 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+16:34:48.649 [main] INFO  com.elysia.BlogApplication - Started BlogApplication in 3.46 seconds (process running for 3.988)
+16:35:32.041 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:35:32.042 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:35:32.044 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+16:35:32.780 [http-nio-80-exec-7] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
+16:35:41.360 [http-nio-80-exec-10] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /home
+16:36:02.429 [http-nio-80-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'one' for method parameter type int is not present]
+16:36:11.813 [http-nio-80-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'one' for method parameter type int is not present]
+16:37:17.889 [main] INFO  com.elysia.BlogApplication - Starting BlogApplication using Java 17.0.7 with PID 6599 (/Users/ayaka/Desktop/sakura/blog/target/classes started by ayaka in /Users/ayaka/Desktop/sakura/blog)
+16:37:17.891 [main] INFO  com.elysia.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+16:37:19.263 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+16:37:19.274 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+16:37:19.276 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:37:19.276 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+16:37:19.378 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:37:19.380 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1423 ms
+16:37:20.177 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+16:37:20.199 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+16:37:20.210 [main] INFO  com.elysia.BlogApplication - Started BlogApplication in 2.997 seconds (process running for 3.451)
+16:37:23.776 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:37:23.777 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:37:23.778 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+16:37:30.254 [http-nio-80-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'one' for method parameter type String is not present]
+16:38:22.154 [main] INFO  com.elysia.BlogApplication - Starting BlogApplication using Java 17.0.7 with PID 6611 (/Users/ayaka/Desktop/sakura/blog/target/classes started by ayaka in /Users/ayaka/Desktop/sakura/blog)
+16:38:22.158 [main] INFO  com.elysia.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+16:38:23.363 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+16:38:23.372 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+16:38:23.374 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:38:23.374 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+16:38:23.479 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:38:23.481 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1249 ms
+16:38:24.144 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+16:38:24.164 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+16:38:24.173 [main] INFO  com.elysia.BlogApplication - Started BlogApplication in 2.612 seconds (process running for 3.018)
+16:38:40.019 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:38:40.020 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:38:40.022 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+16:42:51.018 [main] INFO  com.elysia.BlogApplication - Starting BlogApplication using Java 17.0.7 with PID 6683 (/Users/ayaka/Desktop/sakura/blog/target/classes started by ayaka in /Users/ayaka/Desktop/sakura/blog)
+16:42:51.021 [main] INFO  com.elysia.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+16:42:52.356 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+16:42:52.366 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+16:42:52.367 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:42:52.368 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+16:42:52.463 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:42:52.465 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1367 ms
+16:42:53.169 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+16:42:53.191 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+16:42:53.203 [main] INFO  com.elysia.BlogApplication - Started BlogApplication in 2.87 seconds (process running for 3.309)
+16:43:01.821 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:43:01.822 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:43:01.823 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+16:43:06.408 [http-nio-80-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.alibaba.fastjson.JSONObject.get(Object)" because "c" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.alibaba.fastjson.JSONObject.get(Object)" because "c" is null
+	at com.elysia.controller.Genshin.Once(Genshin.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+16:44:08.276 [main] INFO  com.elysia.BlogApplication - Starting BlogApplication using Java 17.0.7 with PID 6718 (/Users/ayaka/Desktop/sakura/blog/target/classes started by ayaka in /Users/ayaka/Desktop/sakura/blog)
+16:44:08.278 [main] INFO  com.elysia.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+16:44:09.460 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+16:44:09.471 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+16:44:09.472 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:44:09.472 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+16:44:09.576 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:44:09.578 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1237 ms
+16:44:10.262 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+16:44:10.282 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+16:44:10.291 [main] INFO  com.elysia.BlogApplication - Started BlogApplication in 2.615 seconds (process running for 2.998)
+16:44:13.456 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:44:13.456 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:44:13.457 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+16:44:18.449 [http-nio-80-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.alibaba.fastjson.JSONObject.get(Object)" because "c" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.alibaba.fastjson.JSONObject.get(Object)" because "c" is null
+	at com.elysia.controller.Genshin.Once(Genshin.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+16:45:22.284 [main] INFO  com.elysia.BlogApplication - Starting BlogApplication using Java 17.0.7 with PID 6734 (/Users/ayaka/Desktop/sakura/blog/target/classes started by ayaka in /Users/ayaka/Desktop/sakura/blog)
+16:45:22.288 [main] INFO  com.elysia.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+16:45:23.512 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+16:45:23.521 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+16:45:23.522 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:45:23.523 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+16:45:23.614 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:45:23.616 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1263 ms
+16:45:24.291 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+16:45:24.311 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+16:45:24.321 [main] INFO  com.elysia.BlogApplication - Started BlogApplication in 2.658 seconds (process running for 3.077)
+16:45:27.237 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:45:27.238 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:45:27.240 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+16:45:32.024 [http-nio-80-exec-3] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+16:48:47.223 [main] INFO  com.elysia.BlogApplication - Starting BlogApplication using Java 17.0.7 with PID 6794 (/Users/ayaka/Desktop/sakura/blog/target/classes started by ayaka in /Users/ayaka/Desktop/sakura/blog)
+16:48:47.225 [main] INFO  com.elysia.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+16:48:48.450 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+16:48:48.458 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+16:48:48.460 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:48:48.460 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+16:48:48.565 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:48:48.567 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1269 ms
+16:48:49.248 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+16:48:49.271 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+16:48:49.281 [main] INFO  com.elysia.BlogApplication - Started BlogApplication in 2.703 seconds (process running for 3.099)
+16:48:53.539 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:48:53.539 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:48:53.541 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+16:48:57.305 [http-nio-80-exec-3] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /card
+16:49:18.393 [http-nio-80-exec-5] WARN  o.s.web.servlet.PageNotFound - No mapping for POST /card
+16:49:28.523 [main] INFO  com.elysia.BlogApplication - Starting BlogApplication using Java 17.0.7 with PID 6809 (/Users/ayaka/Desktop/sakura/blog/target/classes started by ayaka in /Users/ayaka/Desktop/sakura/blog)
+16:49:28.526 [main] INFO  com.elysia.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+16:49:29.691 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+16:49:29.699 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+16:49:29.699 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:49:29.700 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+16:49:29.800 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:49:29.803 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1206 ms
+16:49:30.472 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+16:49:30.492 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+16:49:30.502 [main] INFO  com.elysia.BlogApplication - Started BlogApplication in 2.569 seconds (process running for 3.034)
+16:49:33.134 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:49:33.135 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:49:33.136 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+16:49:37.606 [http-nio-80-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'role' for method parameter type String is not present]
+16:50:47.685 [main] INFO  com.elysia.BlogApplication - Starting BlogApplication using Java 17.0.7 with PID 6830 (/Users/ayaka/Desktop/sakura/blog/target/classes started by ayaka in /Users/ayaka/Desktop/sakura/blog)
+16:50:47.688 [main] INFO  com.elysia.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+16:50:49.026 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+16:50:49.037 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+16:50:49.040 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:50:49.043 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+16:50:49.156 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:50:49.158 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1404 ms
+16:50:49.858 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+16:50:49.882 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+16:50:49.893 [main] INFO  com.elysia.BlogApplication - Started BlogApplication in 2.944 seconds (process running for 3.43)
+16:50:52.887 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:50:52.887 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:50:52.889 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+16:50:58.950 [http-nio-80-exec-3] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:12:39.713 [main] INFO  com.elysia.BlogApplication - Starting BlogApplication using Java 17.0.7 with PID 7178 (/Users/ayaka/Desktop/sakura/blog/target/classes started by ayaka in /Users/ayaka/Desktop/sakura/blog)
+17:12:39.716 [main] INFO  com.elysia.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+17:12:41.094 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+17:12:41.107 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+17:12:41.109 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:12:41.110 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+17:12:41.222 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:12:41.224 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1442 ms
+17:12:41.298 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'genshin' defined in file [/Users/ayaka/Desktop/sakura/blog/target/classes/com/elysia/controller/Genshin.class]: Failed to instantiate [com.elysia.controller.Genshin]: Constructor threw exception
+17:12:41.302 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+17:12:41.338 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+17:12:41.374 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'genshin' defined in file [/Users/ayaka/Desktop/sakura/blog/target/classes/com/elysia/controller/Genshin.class]: Failed to instantiate [com.elysia.controller.Genshin]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1314)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1199)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293)
+	at com.elysia.BlogApplication.main(BlogApplication.java:12)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.elysia.controller.Genshin]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308)
+	... 17 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "com.elysia.services.UserServices.getJson()" because "this.us" is null
+	at com.elysia.controller.Genshin.<init>(Genshin.java:22)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:198)
+	... 19 common frames omitted
+17:13:12.301 [main] INFO  com.elysia.BlogApplication - Starting BlogApplication using Java 17.0.7 with PID 7210 (/Users/ayaka/Desktop/sakura/blog/target/classes started by ayaka in /Users/ayaka/Desktop/sakura/blog)
+17:13:12.304 [main] INFO  com.elysia.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+17:13:13.501 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+17:13:13.510 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+17:13:13.511 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:13:13.512 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+17:13:13.608 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:13:13.611 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1233 ms
+17:13:14.439 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+17:13:14.463 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+17:13:14.473 [main] INFO  com.elysia.BlogApplication - Started BlogApplication in 2.803 seconds (process running for 3.207)
+17:13:19.241 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:13:19.241 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:13:19.243 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+17:13:23.931 [http-nio-80-exec-3] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:13:23.934 [http-nio-80-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.util.HashMap.put(Object, Object)" because "this.res" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "java.util.HashMap.put(Object, Object)" because "this.res" is null
+	at com.elysia.controller.Genshin.Once(Genshin.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+17:15:03.930 [main] INFO  com.elysia.BlogApplication - Starting BlogApplication using Java 17.0.7 with PID 7237 (/Users/ayaka/Desktop/sakura/blog/target/classes started by ayaka in /Users/ayaka/Desktop/sakura/blog)
+17:15:03.933 [main] INFO  com.elysia.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+17:15:05.253 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+17:15:05.263 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+17:15:05.264 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:15:05.265 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+17:15:05.356 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:15:05.358 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1308 ms
+17:15:06.097 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+17:15:06.117 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+17:15:06.126 [main] INFO  com.elysia.BlogApplication - Started BlogApplication in 3.181 seconds (process running for 3.74)
+17:15:09.194 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:15:09.194 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:15:09.196 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+17:15:13.967 [http-nio-80-exec-2] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:15:17.874 [http-nio-80-exec-3] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:15:21.215 [http-nio-80-exec-4] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:15:23.873 [http-nio-80-exec-5] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:15:26.779 [http-nio-80-exec-6] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:15:28.956 [http-nio-80-exec-7] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:15:31.220 [http-nio-80-exec-8] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:15:33.063 [http-nio-80-exec-9] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:15:35.343 [http-nio-80-exec-10] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:15:37.266 [http-nio-80-exec-1] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:15:39.408 [http-nio-80-exec-2] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:15:41.408 [http-nio-80-exec-3] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:15:43.610 [http-nio-80-exec-4] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:15:45.786 [http-nio-80-exec-5] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:15:48.319 [http-nio-80-exec-6] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:15:50.331 [http-nio-80-exec-7] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:15:52.462 [http-nio-80-exec-8] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:15:54.891 [http-nio-80-exec-9] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:15:56.703 [http-nio-80-exec-10] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:15:58.744 [http-nio-80-exec-1] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:16:00.739 [http-nio-80-exec-2] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:16:04.623 [http-nio-80-exec-3] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:16:07.141 [http-nio-80-exec-4] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:16:09.157 [http-nio-80-exec-6] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:16:09.162 [http-nio-80-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IndexOutOfBoundsException: Index 10 out of bounds for length 10] with root cause
+java.lang.IndexOutOfBoundsException: Index 10 out of bounds for length 10
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at com.alibaba.fastjson.JSONArray.get(JSONArray.java:240)
+	at com.elysia.controller.Genshin.Once(Genshin.java:33)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+17:16:10.473 [http-nio-80-exec-7] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:16:12.394 [http-nio-80-exec-8] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:16:14.268 [http-nio-80-exec-9] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:16:28.014 [http-nio-80-exec-10] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:30:24.284 [main] INFO  com.elysia.BlogApplication - Starting BlogApplication using Java 17.0.7 with PID 7497 (/Users/ayaka/Desktop/sakura/blog/target/classes started by ayaka in /Users/ayaka/Desktop/sakura/blog)
+17:30:24.286 [main] INFO  com.elysia.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+17:30:25.629 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+17:30:25.641 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+17:30:25.643 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:30:25.643 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+17:30:25.749 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:30:25.752 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1400 ms
+17:30:26.549 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+17:30:26.571 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+17:30:26.584 [main] INFO  com.elysia.BlogApplication - Started BlogApplication in 3.078 seconds (process running for 3.605)
+17:30:47.187 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:30:47.188 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:30:47.189 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+17:30:54.297 [http-nio-80-exec-9] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:31:01.556 [http-nio-80-exec-10] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:33:08.566 [main] INFO  com.elysia.BlogApplication - Starting BlogApplication using Java 17.0.7 with PID 7574 (/Users/ayaka/Desktop/sakura/blog/target/classes started by ayaka in /Users/ayaka/Desktop/sakura/blog)
+17:33:08.569 [main] INFO  com.elysia.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+17:33:09.847 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+17:33:09.860 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+17:33:09.861 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:33:09.861 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+17:33:09.964 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:33:09.966 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1333 ms
+17:33:10.705 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+17:33:10.726 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+17:33:10.734 [main] INFO  com.elysia.BlogApplication - Started BlogApplication in 2.897 seconds (process running for 3.388)
+17:33:15.002 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:33:15.002 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:33:15.004 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+17:33:18.886 [http-nio-80-exec-2] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:33:22.406 [http-nio-80-exec-3] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:33:25.027 [http-nio-80-exec-4] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:36:24.349 [main] INFO  com.elysia.BlogApplication - Starting BlogApplication using Java 17.0.7 with PID 7619 (/Users/ayaka/Desktop/sakura/blog/target/classes started by ayaka in /Users/ayaka/Desktop/sakura/blog)
+17:36:24.352 [main] INFO  com.elysia.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+17:36:25.593 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+17:36:25.603 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+17:36:25.604 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:36:25.605 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+17:36:25.722 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:36:25.725 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1287 ms
+17:36:26.438 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+17:36:26.458 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+17:36:26.468 [main] INFO  com.elysia.BlogApplication - Started BlogApplication in 2.793 seconds (process running for 3.261)
+17:36:32.039 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:36:32.040 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:36:32.041 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+17:36:35.775 [http-nio-80-exec-3] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:36:39.670 [http-nio-80-exec-4] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:36:43.257 [http-nio-80-exec-5] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]
+17:36:46.856 [http-nio-80-exec-6] INFO  c.elysia.controller.UserController - 抽取卡池为:["蓝色武器","蓝色武器","蓝色武器","蓝色武器","迪奥娜","砂糖","米卡","神里绫华","祭礼弓","祭礼剑"]

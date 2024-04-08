@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>宵宫</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/layui/2.8.4/css/layui.css">
+    <script src="https://cdn.staticfile.org/layui/2.8.4/layui.js"></script>
+</head>
+<style>
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .layui-panel{
+        margin-top: 12px;
+        font-size: 18px;
+        }
+    p {
+       margin-left: 10px;
+       margin-right: 10px;
+       color: #FF6100;
+      }
+    button {
+        margin-left:180px;
+        margin-bottom: 10px;
+        }
+</style>
+<body>
+<div class="layui-row layui-col-space10">
+    <div class="layui-col-md6">
+        <div class="layui-card">
+            <div class="layui-card-body">
+                <img src="/static/MyGirl/xg-1.png">
+            </div>
+            <hr>
+            <div class="layui-card-body">
+                <img src="/static/MyGirl/xg-2.png">
+            </div>
+        </div>
+    </div>
+<!--这是分割线-->
+    <div class="layui-col-md6">
+        <div class="layui-panel">
+            <div>
+                <h5 style="text-align: center;color: #FF6100;">长野原烟花店 -- 「琉焰华舞」宵宫</h5>
+                <p>名字：[[${yo.name}]]</p>
+                <p>神之眼：[[${yo.mark}]]</p>
+                <p>称号：[[${yo.heroName}]]</p>
+                <p>初次见面：[[${yo.firstSight}]]</p>
+                <hr>
+                <p style="text-align:justify;">
+                    关于宵宫·其一：宵宫的名字在花见坂可谓是家喻户晓。她是稻妻技艺最精湛的烟花专家，象征着“鸣神岛的夏天”。继承了“长野原”衣钵的宵宫，能为烟花赋予变幻莫测的姿态，帯给人们无与伦比的体验。除去工匠的身份，她还是众多孩子心目中的“英雄姐姐”。在孩子们眼里，无论多大的麻烦，宵宫姐姐都有办法解决。
+                </p>
+                <hr>
+                <p style="text-align:justify;">
+                    关于宵宫·其二：宵宫与人聊天，总能在倾听和表达之间找到完美的平衡点。不赘述，不越界，不冷淡，亦不过分纠缠。一场茶话会后，大家留下的往往都是好心情。街坊邻居都是些普通人，生活中并无太多趣事。有时，同一则消息会被不同人翻来覆去地讲述，但宵宫完全不反感这件事。她所享受的是和別人交流的过程——即便是同样的事，不同的人也会有完全不同的看法。接管烟花店后，宵宫跟街坊的关系愈发融洽。不少老人视宵宫为忘年之交，常邀请宵宫来家中坐坐，聊起多年前的庆典盛况。已至中年的父母辈会拜托宵宫调解自己与孩子的关系，和宵宫唠唠柴米油盐的家常。青年们则与宵宫称兄道弟，自发帮宵宫搬运沉重的烟花原材料，希望宵宫能提前下班，早点带街上的孩子们出去玩。
+                    “我相信语言有它独特的力量，没有什么是说出来还解决不了的！”宵宫如是说
+                </p>
+                <hr>
+                <p style="text-align:justify;">
+                    关于宵宫·其三：精益求精的匠人往往严谨而自律，但宵宫是个例外。她行事自由，作息时间毫无规律。有时和人闲聊太久，没能完成白天的工作，就会通宵干活。等到天色微明，带着完工的成就感一同登上高处观赏日出，远望金红的流云，宵宫总能得到启发，脑海中浮现各种新式烟花的形姿，困意也随之袭来……。随心所欲的生活态度让宵宫感到自在。人们有可能在任何时间场合遇见她。她享受这份自由，常说自己的生活因而变得有趣了。当然，重要的庆典前夕，宵宫还是会适当控制自己，绝不耽误表演这项“正事”。
+                </p>
+                <hr>
+                <p style="text-align:justify;">
+                    关于宵宫·其四：“霞彩焕花火，花火知我愿，我愿入夜空，夜空自甄明。”
+                    这首无名歌谣由来已久。最近几年，孩子们似乎误解了歌谣的含义，认为只要找来亮晶晶的宝物，就能向宵宫姐姐换取只属于自己的特制烟花。点燃烟花，心底的愿望就能在未来实现。
+                    于是花见坂的孩子们欢唱着这首歌谣，四处寻找漂亮宝物，满怀期待地将它们带到宵宫姐姐面前。宵宫起初有些困感，但在听了孩子们对歌谣的解读后，欣然接受了这些要求，还给出了独到见解——歌中提到的霞彩，并不是特指亮晶晶的宝物。只要宵宫姐姐认为它“足够闪耀”，无论是小溪中的彩色石子，海滩上的贝壳碎片，宵宫都会欣然收下并如约制作精美烟花。
+                    要是孩子们真的找来贵重物品，宵宫反而会推说它太过普通，并和孩子一起寻找失主。宝物闪耀与否，其实并不重要。重要的是孩子们有着那样一份信念，认为能交换“花火”的“霞彩”确实存在。哪怕在他人看来万分幼稚，宵宫会尽自己的力量守护这些独属于孩童的美好心愿。
+                </p>
+                <hr>
+                <div>
+                    <button type="button" class="layui-btn layui-btn-normal layui-btn-radius" lay-on="video-1">角色演示：「鸣神岛的夏天」
+                    </button>
+                    <button type="button" class="layui-btn layui-btn-normal layui-btn-radius" lay-on="video-2">
+                    角色短片：「流星知愿」
+                    </button>
+                </div>            
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    layui.use(function(){
+        var util = layui.util;
+        var layer = layui.layer;
+        util.on('lay-on', {
+            'video-1': function(){
+                layer.open({
+                    type: 2,
+                    area: ['1000px', '1000px'],
+                    title: false,
+                    closeBtn: 0,
+                    shadeClose:true,
+                    content: '//www.bilibili.com/video/BV1Dq4y1D7cr/?spm_id_from=333.337.search-card.all.click'
+                }) 
+            },
+            'video-2': function(){
+                layer.open({
+                    type: 2,
+                    area: ['700px', '700px'],
+                    title: false,
+                    closeBtn: 0,
+                    shadeClose:true,
+                    content: '//www.bilibili.com/video/BV1Zh4y1x7RL/?spm_id_from=333.337.search-card.all.click'
+                });
+            }
+        });
+    })
+</script>
+</body>
+</html>

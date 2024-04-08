@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>账号注册</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/layui/2.8.4/css/layui.css">
+    <script src="https://cdn.staticfile.org/layui/2.8.4/layui.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+
+    <style>
+		.register{
+			width: 320px;
+			margin: 21px auto 0;
+		}
+		.layui-icon .other {
+			position: relative;
+			display: inline-block;
+			margin: 0 2px;
+			top: 2px;
+			font-size: 26px;
+		}
+		.cls {
+			margin: 50px auto;
+			padding: 20px;
+			background-color: rgba(255, 255, 255, 0.5);
+			border-radius: 20px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+			text-align: center;
+		}
+		.cls:before {
+			content: "";
+			position: absolute;
+			top: -10px;
+			left: -10px;
+			right: -10px;
+			bottom: -10px;
+			background-image: url('../static/luori.jpeg');
+			background-size: cover;
+			z-index: -1;
+		}
+	</style>
+</head>
+<body>
+<div class="cls">
+    <form method="post" action="/register" class="layui-form">
+        <div class="register">
+            <div class="layui-form-item">
+                <div class="layui-input-wrap">
+                    <div class="layui-input-prefix">
+                        <i class="layui-icon layui-icon-username"></i>
+                    </div>
+                    <input type="text" id="us" name="user" value="" lay-verify="required|user" placeholder="用户名" autocomplete="off" class="layui-input" lay-affix="clear">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <div class="layui-input-wrap">
+                    <div class="layui-input-prefix">
+                        <i class="layui-icon layui-icon-password"></i>
+                    </div>
+                    <input type="password" id="pw" name="pwd" value="" lay-verify="required|pwd" placeholder="密 码" autocomplete="off" class="layui-input" lay-affix="eye">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <button class="layui-btn layui-btn-fluid" lay-submit type="button" lay-filter="register">注册</button>
+            </div>
+            <a href="/login" class="other">登陆已有账号</a>
+        </div>
+    </form>
+</div>
+<script>
+    layui.use(function(){
+		var fm = layui.form;
+		var ly = layui.layer;
+		// 规则验证
+		fm.verify({
+			user: function(value, item){
+			    if(!new RegExp("^[a-zA-Z0-9_\u4e00-\u9fa5\\s·]+$").test(value)){
+			    	return '用户名不能有特殊字符';
+			      }
+			    if(/(^_)|(__)|(_+$)/.test(value)) return '用户名首尾不能出现 _ 下划线';
+			    if(/^\d+$/.test(value)) return '用户名不能全为数字';
+
+			    if(value === 'fuck'){
+			    	alert('用户名不能为敏感词');
+			        return true;
+			    }1
+			},
+			pwd: [/^[\S]{6,12}$/, '密码必须为6到12位的非空字符']
+		});
+		// 表单提交事件
+		fm.on('submit(register)', function(data){
+			var fie = data.field;  // 表单的字段值
+	 		var pwd = document.getElementById("pw").value;
+	 		fie.pwd = CryptoJS.MD5(pwd).toString()
+			$.ajax({
+				url: "/register",
+				data: fie,
+				type: "POST",
+				dataType: "json",
+				success: function(resp){
+					alert("注册成功！\n你的ID是:" + resp.id + "\n请牢记此ID，避免账号丢失！");
+					window.location.href="/login";
+				}
+			});
+			return true;
+		});
+	});
+
+</script>
+</body>
+</html>

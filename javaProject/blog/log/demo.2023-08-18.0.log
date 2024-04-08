@@ -1,0 +1,71 @@
+10:11:47.372 [main] INFO  com.elysia.BlogApplication - Starting BlogApplication using Java 17.0.7 with PID 2108 (/Users/ayaka/Desktop/sakura/blog/target/classes started by ayaka in /Users/ayaka/Desktop/sakura/blog)
+10:11:47.375 [main] INFO  com.elysia.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+10:11:49.043 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+10:11:49.073 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+10:11:49.074 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:11:49.074 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+10:11:49.197 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:11:49.200 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1740 ms
+10:11:50.116 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+10:11:50.139 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+10:11:50.150 [main] INFO  com.elysia.BlogApplication - Started BlogApplication in 3.552 seconds (process running for 4.15)
+10:11:55.944 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:11:55.944 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:11:55.946 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+10:12:02.492 [http-nio-80-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
+10:15:38.273 [main] INFO  com.elysia.BlogApplication - Starting BlogApplication using Java 17.0.7 with PID 2220 (/Users/ayaka/Desktop/sakura/blog/target/classes started by ayaka in /Users/ayaka/Desktop/sakura/blog)
+10:15:38.276 [main] INFO  com.elysia.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+10:15:39.655 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+10:15:39.666 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+10:15:39.668 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:15:39.669 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+10:15:39.775 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:15:39.778 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1428 ms
+10:15:40.587 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+10:15:40.606 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+10:15:40.616 [main] INFO  com.elysia.BlogApplication - Started BlogApplication in 3.075 seconds (process running for 3.602)
+10:15:44.577 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:15:44.578 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:15:44.579 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+10:23:45.527 [main] INFO  com.elysia.BlogApplication - Starting BlogApplication using Java 17.0.7 with PID 2438 (/Users/ayaka/Desktop/sakura/blog/target/classes started by ayaka in /Users/ayaka/Desktop/sakura/blog)
+10:23:45.529 [main] INFO  com.elysia.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+10:23:46.938 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+10:23:46.952 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+10:23:46.953 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:23:46.954 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+10:23:47.061 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:23:47.063 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1475 ms
+10:23:47.874 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+10:23:47.895 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+10:23:47.905 [main] INFO  com.elysia.BlogApplication - Started BlogApplication in 3.098 seconds (process running for 3.628)
+10:24:27.889 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:24:27.890 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:24:27.891 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+10:28:40.562 [main] INFO  com.elysia.BlogApplication - Starting BlogApplication using Java 17.0.7 with PID 2521 (/Users/ayaka/Desktop/sakura/blog/target/classes started by ayaka in /Users/ayaka/Desktop/sakura/blog)
+10:28:40.565 [main] INFO  com.elysia.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+10:28:42.014 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+10:28:42.025 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+10:28:42.026 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:28:42.026 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+10:28:42.129 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:28:42.132 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1468 ms
+10:28:42.905 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+10:28:42.928 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+10:28:42.940 [main] INFO  com.elysia.BlogApplication - Started BlogApplication in 3.185 seconds (process running for 3.692)
+10:28:47.793 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:28:47.794 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:28:47.796 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+10:31:40.346 [main] INFO  com.elysia.BlogApplication - Starting BlogApplication using Java 17.0.7 with PID 2594 (/Users/ayaka/Desktop/sakura/blog/target/classes started by ayaka in /Users/ayaka/Desktop/sakura/blog)
+10:31:40.349 [main] INFO  com.elysia.BlogApplication - No active profile set, falling back to 1 default profile: "default"
+10:31:41.796 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+10:31:41.807 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+10:31:41.808 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:31:41.808 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+10:31:41.906 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:31:41.908 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1449 ms
+10:31:42.650 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+10:31:42.672 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+10:31:42.697 [main] INFO  com.elysia.BlogApplication - Started BlogApplication in 3.101 seconds (process running for 3.589)
+10:31:49.073 [http-nio-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:31:49.073 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:31:49.075 [http-nio-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms

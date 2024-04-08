@@ -1,0 +1,35 @@
+logging:
+  config: logback.xml
+  level:
+    com.Shy.blog.controller: trace
+
+spring:
+  http:
+    encoding:
+      charset: UTF-8
+  thymeleaf:
+    cache: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/Blog?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&autoReconnect=true&failOverReadOnly=false&maxReconnects=10
+    username: root
+    password: ms111111
+    hikari:
+      maximum-pool-size: 10
+      max-lifetime: 1770000
+  resources:
+    static-locations: classpath:/static/
+  mvc:
+    static-path-pattern: /static/**
+
+mybatis:
+  # 指定别名设置的包为所有entity
+  type-aliases-package: com.Shy.blog.entity
+  configuration:
+    map-underscore-to-camel-case: true # 驼峰命名规范
+  mapper-locations: # mapper映射文件位置
+    classpath: mapper/*.xml
+
+server:
+  host: 0.0.0.0
+  port: 80

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>刻晴</title>
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/layui/2.8.4/css/layui.css">
+  <script src="https://cdn.staticfile.org/layui/2.8.4/layui.js"></script>
+</head>
+<style>
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .layui-panel{
+        margin-top: 12px;
+        font-size: 18px;
+        }
+    p {
+       margin-left: 10px;
+       margin-right: 10px;
+       color: #8A2BE2;
+      }
+    button {
+        margin-left:240px;
+        margin-bottom: 10px;
+        }
+</style>
+<body>
+<div class="layui-row layui-col-space10">
+  <div class="layui-col-md6">
+    <div class="layui-card">
+      <div class="layui-card-body">
+        <img src="/static/MyGirl/kq-1.jpg">
+      </div>
+      <hr>
+      <div class="layui-card-body">
+        <img src="/static/MyGirl/kq-2.png">
+      </div>
+    </div>
+  </div>
+  <!--这是分割线-->
+  <div class="layui-col-md6">
+    <div class="layui-panel">
+      <div>
+        <h5 style="text-align: center;color: #8A2BE2;">璃月七星之玉衡星 -- 「霆霓快雨」刻晴</h5>
+        <p>名字：[[${kq.name}]]</p>
+        <p>神之眼：[[${kq.mark}]]</p>
+        <p>称号：[[${kq.heroName}]]</p>
+        <p>初次见面：[[${kq.firstSight}]]</p>
+        <hr>
+        <p style="text-align:justify;">
+          关于刻晴·其一：璃月七星之一，玉衡星，刻晴。她对「帝君一言而决的璃月」颇有微词——但实际上，神挺欣赏她这样的人。
+          身为「璃月七星」，刻晴是个不折不扣的行动派。如果一件事在她看来是有价值、有必要的，那她一定会亲力亲为。比如，
+          她曾亲自踏遍璃月全境，将地势地貌牢记于心，以便日后能够最大限度地利用每一寸土地。刻晴随时关注着璃月境内的大小事情，
+          岩王帝君每年却只降临一次。数千年繁华的历史，已经证明追随帝君的脚步是正确之举，但刻晴对此则始终抱有顾虑——眼下璃月港的繁荣，
+          就像沙滩上的宏伟沙堡。决定大海是否涨潮的，却不是人类自己。
+          「帝君已经守护了璃月千年，但下一个千年，十个千年，一百个千年，也会是如此吗？」
+        </p>
+        <hr>
+        <p style="text-align:justify;">
+          关于刻晴·其二：刻晴出身名门望族。关于岩王帝君对璃月人民产生的影响，她的认识比大多数人都要深刻。宛如一个轮回，每隔几年，
+          请仙典仪过后璃月商界便会发生巨大动荡。帝君新公布的决策，总令几家欢喜几家愁。贫穷的人盼着借此机会大赚一笔，富有的人祈祷风向变化不会影响自家产业。
+          比起对经济建设的考量，商人们更热衷于信仰型投资。在当下的璃月，这一选择无可厚非。帝君神权强大，依靠他就能衣食无忧。
+          刻晴对此则始终抱有顾虑；假如某一天帝君不再履行这份职责，璃月又将何去何从?然而，刻晴无法得到多数派的支持。
+          在旁人看来，凡人的一生对璃月历史而言不过须臾，何必杞人忧天。刻晴认为这一懒惰又懦弱的念头否定了整个人类族群的存在价值。
+          可如果人类的存在没有意义，他们凭什么为神所爱？
+        </p>
+        <hr>
+        <p style="text-align:justify;">
+          关于刻晴·其三：「昨天的经历都将成为明天的力量。」这是刻晴的人生信条之一。仅是待在玉京台，就只能看到一成不变的风景。想要拥有雷霆般的判断力与执行力，便需要大量经验。
+          只要是刻晴认为有价值的事，她一定会亲手操办。例如某一次为了拟定工人待遇改善计划，她亲赴现场，体验了足足两个月工人生活。
+          很难想象，这位位高权重的少女在层岩巨渊拉过车，帮南码头的工人夯过土，在小餐馆里跑过堂。
+          工作之余，她还随手搜集证据，举报了一个压榨工人的黑心恶霸。
+        </p>
+        <hr>
+        <p style="text-align:justify;">
+          关于刻晴·其四：将绝大部分精力奉献给璃月港的刻晴，闲暇时竟会采取一种旁人难以预料的消遣方式——消费。
+          休息日，她会换上朴素的衣裳，约上三两好友，漫步在绯云坡与吃虎岩，享受购物乐趣。帝君离去后，越发繁忙的刻晴依然保留这一解压方法。只不过，其中依稀产生了一点变化。
+          一次逛街途中，她偶然瞥见路边一个不起眼的小摊上摆着岩王帝君的二头身土偶。刻晴当机立断，找借口把好友们支到街对面丝绸铺里，自己来到摊前，将帝君的土偶拿在手里仔细端详。
+          她知道绝不能在这件事上浪费太多时间，便小心翼翼地观察四周。确定不引人注目后，购买、付款、取货一气呵成。将土偶收进包里，刻睛才长舒一口气，露出暖洋洋的微笑。正在此时，一个抱着丝绸的朋友拍了拍她。
+          事情最终暴露了。大家都很诧异，刻晴分明是最不敬神的人，为什么会购买帝君的土偶呢?「我、我买这个只是为了自省！没什么不行的吧!」「自省」一说姑且解释得通。但事实上，这类「自省」用的小物件，刻晴已经不知不觉地买了一整柜。
+        </p>
+        <hr>
+        <div>
+          <button type="button" class="layui-btn layui-btn-normal layui-btn-radius" lay-on="video-1">
+            角色演示：「霆霓快雨：刻晴」
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+    layui.use(function(){
+        var util = layui.util;
+        var layer = layui.layer;
+        util.on('lay-on', {
+            'video-1': function(){
+                layer.open({
+                    type: 2,
+                    area: ['700px', '700px'],
+                    title: false,
+                    closeBtn: 0,
+                    shadeClose:true,
+                    content: '//www.miyoushe.com/ys/article/1736283'
+                })
+            }
+        });
+    })
+</script>
+</body>
+</html>

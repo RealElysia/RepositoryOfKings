@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一些杂谈</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/layui/2.8.4/css/layui.css">
+    <script src="https://cdn.staticfile.org/layui/2.8.4/layui.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+
+        li {
+            margin-right:100px;
+        }
+        .layui-logo {
+            margin-right: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo layui-hide-xs layui-bg-blue">欢迎，高洁而纯真的灵魂</div>
+        <ul class="layui-nav layui-bg-blue layui-layout-left" >
+            <li class="layui-nav-item layui-hide-xs"><a href="/home">首页博客</a></li>
+            <li class="layui-nav-item layui-hide-xs"><a href="/laopo">纸片人老婆们</a></li>
+            <li class="layui-nav-item layui-hide-xs"><a href="/study">这个不用看</a></li>
+            <li class="layui-nav-item layui-hide-xs"><a href="/selfWeb">小工具</a></li>
+            <li class="layui-nav-item layui-hide-xs"><a href="//baidu.com">技术支持</a></li>
+
+        </ul>
+
+        <ul class="layui-nav layui-bg-blue layui-layout-right">
+            <li class="layui-nav-item layui-hide layui-show-sm-inline-block">
+                <a href="javascript:;">
+                  <img src="/static/MyGirl/tx.png" class="layui-nav-img" alt="seele">
+                  Seele
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="layui-side layui-bg-blue">
+        <div class="layui-side-scroll">
+            <ul class="layui-nav layui-nav-tree layui-bg-blue" lay-filter="test">
+                <li class="layui-nav-item"><a id="a1">软件测试基础</a></li>
+                <li class="layui-nav-item"><a id="a2">MySQL基础命令</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="layui-body">
+        <div style="padding: 15px;">
+            <blockquote class="layui-elem-quote layui-text">
+            以下是重点内容
+            </blockquote>
+            <div class="layui-panel" id="s1">
+                
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $("#a1").click(function(){
+            $.ajax({
+                url: "/study1",
+                success: function(res){
+                    $("#s1").html(res);
+                }
+            });
+        });
+        $("#a2").click(function(){
+            $.ajax({
+                url: "/study2",
+                success: function(res){
+                    $("#s1").html(res);
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
