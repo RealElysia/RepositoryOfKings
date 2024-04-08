@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>嘻嘻购物</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<div class="alert alert-primary">
+	<strong style="margin-left: 40%;">欢迎来到嘻嘻购物中心，祝你购物愉快</strong>
+</div>
+<div class="container mt-5">
+	<h3 style="margin-left: 50%; color: pink;">账号注册</h3>
+	<form action="" id="myForm">
+		<div class="mb-3">
+			<label for="user" class="form-label">用户名*：</label>
+			<input type="text" class="form-control" id="user" name="user" required />
+			<div class="invalid-feedback">
+			    用户名必须以字母开头，数字、字母混和，至少3个字符
+			</div>
+		</div>
+		<div class="mb-3">
+			<label for="pwd" class="form-label">用户密码*：</label>
+			<input type="password" class="form-control" id="pwd" name="pwd" required />
+			<div class="invalid-feedback">
+			    用户密码必须是数字、字母混和，至少6个字符
+			</div>
+		</div>
+		<button type="submit" class="btn btn-primary mt-3" style="margin-left: 50%;">注册</button><br />
+		<a href="/" style="margin-left: 45%;">已有账号？点此登录</a>
+	</form>
+</div>
+<script>
+	const form = document.getElementById('myForm')
+	const uid =  document.getElementById('uid')
+	const user =  document.getElementById('user')
+	const pwd =  document.getElementById('pwd')
+	const seller = document.getElementById('seller')
+	
+	// 用户名验证
+	user.addEventListener('input', function(){
+		validateUser(this)
+	})
+	user.addEventListener('blur', function(){
+		validateUser(this)
+	})
+	function validateUser(user){
+		const regx = /^[a-zA-Z][a-zA-Z0-9]{2,}$/
+		const name = user.value;
+		const valid = regx.test(name)
+		
+		if (valid){
+			user.classList.remove('is-invalid');
+		}else{
+			user.classList.add('is-invalid');
+		}
+		return valid;
+	}
+	// 用户密码验证
+	pwd.addEventListener('input', function(){
+		validatePwd(this)
+	})
+	pwd.addEventListener('blur', function(){
+		validatePwd(this)
+	})
+	function validatePwd(pwd){
+		const val = pwd.value;
+		const regx = /^[a-zA-Z0-9]{5,}$/
+		const valid = regx.test(val)
+		
+		if (valid){
+			pwd.classList.remove('is-invalid');
+		}else{
+			pwd.classList.add('is-invalid');
+		}
+		return valid;
+	}
+	// 检测开关状态
+	seller.addEventListener('change', function(){
+		this.value = this.checked ? '1' : '0'
+	})
+	// 表单提交
+	form.addEventListener('submit', function(event){
+		event.preventDefault()
+		if (validateUser(user) && validatePwd(pwd))
+		{
+			const data = {user: user.value, pwd:pwd.value, seller: seller.value}
+			$.ajax({
+				url: '/addUser',
+				data: data,
+				type: 'post',
+				dataType: 'json',
+				success: function(resp){
+					if(resp.code==1){
+						alert(resp.msg)
+					}else{
+						alert('注册成功！你的ID是：'+resp.id)
+						window.location='/login'
+					}
+				}
+			})
+		}
+	})
+</script>
+</body>
+</html>

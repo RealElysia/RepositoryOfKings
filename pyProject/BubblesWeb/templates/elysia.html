@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>爱莉希雅</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+	<style>
+		body {
+		    background-image: url('../static/elysia/bg-ely.jpg');
+		    background-size: cover;
+			background-repeat: no-repeat;
+		}
+		/* 设置半透明效果 */
+		body::before {
+		    content: '';
+		    position: fixed;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		    background-color: rgba(255, 255, 255, 0.7); 
+			z-index: -1;
+		}
+		.carousel-item img {
+			width: 40%;
+		}
+		a:hover {
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid mt-3">
+		<div class="alert" style="text-align: center;">
+			<strong style="color: hotpink;">如飞花般绚烂的美丽少女--爱莉希雅</strong>
+		</div>
+		<div id="elysia" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+			    <button type="button" data-bs-target="#elysia" data-bs-slide-to="0" class="active"></button>
+			    <button type="button" data-bs-target="#elysia" data-bs-slide-to="1"></button>
+			    <button type="button" data-bs-target="#elysia" data-bs-slide-to="2"></button>
+				<button type="button" data-bs-target="#elysia" data-bs-slide-to="3"></button>
+				<button type="button" data-bs-target="#elysia" data-bs-slide-to="4"></button>
+				<button type="button" data-bs-target="#elysia" data-bs-slide-to="5"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="../static/elysia/lb-ely.jpg" alt="baike-elysia" class="mx-auto d-block"/>
+				</div>
+				<div class="carousel-item">
+					<img src="../static/elysia/bg-ely.jpg" alt="baike-elysia" class="mx-auto d-block"/>
+				</div>
+				<div class="carousel-item">
+					<img src="../static/elysia/lb-ely-2.jpg" alt="pixiv@ao~" class="mx-auto d-block"/>
+				</div>
+				<div class="carousel-item">
+					<img src="../static/elysia/lb-ely-3.jpg" alt="pixiv@ao~" class="mx-auto d-block"/>
+				</div>
+				<div class="carousel-item">
+					<img src="../static/elysia/lb-ely-4.jpg" alt="pixiv@ao~" class="mx-auto d-block"/>
+				</div>
+				<div class="carousel-item">
+					<img src="../static/elysia/lb-ely-5.jpg" alt="pixiv@ao~" class="mx-auto d-block"/>
+				</div>
+			</div>
+			  <!-- 左右切换按钮 -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#elysia" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#elysia" data-bs-slide="next">
+			    <span class="carousel-control-next-icon"></span>
+			</button>
+		</div>
+		<div class="alert" style="color: hotpink;">
+			<strong style="color: hotpink;">角色故事:<a data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="爱莉希雅，手机游戏《崩坏3》及其衍生作品中的角色，第一文明纪元抗崩坏组织逐火之蛾的逐火十三英桀之一，位次“Ⅱ” [3]，刻印为“真我”。自称第一文明纪元的第十三律者 [15]，实际为最早诞生于世的“人之律者”，又名“始源之律者”。">爱莉希雅</a></strong><br />
+			<button class="btn btn-primary" id="story-1" data-bs-toggle="modal" data-bs-target="#story-modal" style="margin-left: 50px;margin-top: 10px;">关于爱莉希雅-其一</button>
+			<button class="btn btn-primary" id="story-2" data-bs-toggle="modal" data-bs-target="#story-modal" style="margin-left: 50px;margin-top: 10px;">关于爱莉希雅-其二</button>
+			<button class="btn btn-primary" id="story-3" data-bs-toggle="modal" data-bs-target="#story-modal" style="margin-left: 50px;margin-top: 10px;">关于爱莉希雅-其三</button>
+			<button class="btn btn-primary" id="story-4" data-bs-toggle="modal" data-bs-target="#story-modal" style="margin-left: 50px;margin-top: 10px;">关于爱莉希雅-其四</button>
+			<button class="btn btn-primary" id="story-5" data-bs-toggle="modal" data-bs-target="#story-modal" style="margin-left: 50px;margin-top: 10px;">关于爱莉希雅-其五</button>
+		</div>
+		<div class="alert" style="color: hotpink;">
+			<ul class="list-group"><strong>角色语音：</strong>
+				<li class="list-group-item">
+					<div class="audio-player">
+						<span class="obc-tmpl-character__voice-content">明媚的阳光和明媚的少女······是不是很相衬呢？</span>
+						<audio controls>
+							<source type="audio/mpeg" src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/08/13/75216984/1e15275fb2a48bb6908769bd42a3697a_7634474368646485716.wav" />
+						</audio>
+					</div>
+				</li>
+				<li class="list-group-item">
+					<div class="audio-player">
+						<span>我的眼睛漂亮吗？这可不是美瞳哦，是美少女的魔法。</span>
+						<audio controls>
+							<source type="audio/mpeg" src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/08/13/75216984/45e261a4efe98cae9f9a83716d1f16d8_3540221585161965165.wav" />
+						</audio>
+					</div>
+				</li>
+				<li class="list-group-item">
+					<div class="audio-player">
+						<span class="obc-tmpl-character__voice-content">我也会阿波尼亚的读心术，比如，你在想我，对不对？</span>
+						<audio controls>
+							<source type="audio/mpeg" src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/08/13/75216984/6c89790cf0c54c814dded02d4833606d_483316301347500281.wav" />
+						</audio>
+					</div>
+				</li>
+				<li class="list-group-item">
+					<div class="audio-player">
+						<span>甜甜的点心是不是跟甜甜的少女很相配？我也这么觉得。</span>
+						<audio controls>
+							<source type="audio/mpeg" src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/08/13/75216984/46da2bd3315227c228940e6fe026fed1_1759472794454482527.wav" />
+						</audio>
+					</div>
+				</li>
+				<li class="list-group-item">
+					<div class="audio-player">
+						<span>冬天到了，来玩窗户写字吧，就写······我永远喜欢爱莉希雅！</span>
+						<audio controls>
+							<source type="audio/mpeg" src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/11/02/75216984/bed4e97183a09409dfd5029cc539308a_2542275797432229860.wav" />
+						</audio>
+					</div>
+				</li>
+				<li class="list-group-item">
+					<a href="https://bbs.mihoyo.com/bh3/wiki/content/1784/detail?bbs_presentation_style=no_header">
+						更多语音请前往官方档案-米游社，一起加入爱门！
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="modal" id="story-modal">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		 
+		      <!-- 模态框头部 -->
+		      <div class="modal-header">
+		        <h4 class="modal-title">角色故事-爱莉希雅</h4>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+		      </div>
+		 
+		      <!-- 模态框内容 -->
+		      <div class="modal-body" id="modal-content">
+		        模态框内容..
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	<script src="../static/js/elysia.js"></script>
+	<script>
+		var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+		var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+		  return new bootstrap.Popover(popoverTriggerEl)
+		})
+	</script>
+</body>
+</html>

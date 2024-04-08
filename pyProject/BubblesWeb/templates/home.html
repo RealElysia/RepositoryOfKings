@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小鲤鱼吐泡泡</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+	<style>
+		/* 设置背景图片 */
+		body {
+		    background-image: url('../static/xiaoliyu2.jpg');
+		    background-size: cover;
+			background-repeat: no-repeat;
+		}
+		/* 设置半透明效果 */
+		body::before {
+		    content: '';
+		    position: fixed;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		    background-color: rgba(255, 255, 255, 0.8); 
+			z-index: -1;
+		}
+		.logo-context img {
+			width: 30%;
+			opacity: 0;
+			transition: opacity 1s ease;
+		}
+		
+		.logo-context {
+			position: relative;
+			display: flex;
+			justify-content: center;
+		}
+		
+		.logo-context img.active {
+			opacity: 1;
+		}
+		
+		.gradient-text {
+		      background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3); 
+		      -webkit-background-clip: text;
+		      background-clip: text; 
+		      color: transparent; 
+		      font-size: 48px; 
+		      font-weight: bold;
+		      text-align: center; 
+		    }
+			
+		.button-container {
+			display: flex;
+			justify-content: center;
+			margin-top: 50px;
+		}
+			
+		.button-container button {
+			margin: 0 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid mt-3">
+		<div class="alert" style="text-align: center;"><strong style="color: orange;">欢迎来到这个网站，随便看看吧</strong></div>
+		<p class="alert"><strong>说明：</strong>这个网站有简易的买/卖页面、帖吧讨论页、个人私货展示（绫华&爱莉）</p>
+		<div class="logo-context">
+			<img src="../static/realeme.png" alt="Elysia-True" class="logo active"/>
+			<img src="../static/ice.png" alt="Ayaka-Ice" class="logo"/>
+		</div>
+		<p class="gradient-text alert">TECH OTAKUS SAVE THE WORLD</p>
+		<div class="button-container">
+			<button class="btn btn-primary" onclick="location.href='/seller'">购物-卖家</button>
+			<button class="btn btn-primary" onclick="location.href='/buyer'">购物-买家</button>
+			<button class="btn btn-primary" onclick="location.href='/talk'">讨论贴</button>
+			<button class="btn btn-primary" onclick="location.href='/elysia'">爱莉希雅</button>
+			<button class="btn btn-primary" onclick="location.href='/ayaka'">神里绫华</button>
+		</div>
+		<div class="alert" style="text-align: center;margin-top: 50px;">本网站是作者闲暇时自己慢慢写的，欢迎提供技术支持和意见，Email：2558347857@qq.com</div>
+	</div>
+	<script>
+	  // JavaScript to switch logos every 10 seconds
+	  var logos = document.querySelectorAll('.logo-context .logo');
+	  var currentLogoIndex = 0;
+	
+	  setInterval(function() {
+	    // Hide current logo
+	    logos[currentLogoIndex].classList.remove('active');
+	
+	    // Move to the next logo
+	    currentLogoIndex = (currentLogoIndex + 1) % logos.length;
+	
+	    // Show next logo
+	    logos[currentLogoIndex].classList.add('active');
+	  }, 5000);
+	</script>
+</body>
+</html>

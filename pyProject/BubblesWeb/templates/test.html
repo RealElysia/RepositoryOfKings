@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Text Editor</title>
+  <style>
+    .editor {
+      width: 400px;
+      height: 200px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="editor" contenteditable="true" id="editor">
+    <!-- 初始文本内容 -->
+    This is a simple text editor.
+  </div>
+  <button onclick="saveText()">Save</button>
+
+  <script>
+    function saveText() {
+      // 获取编辑器内容
+      var editorContent = document.getElementById('editor').innerText;
+      // 可以将编辑器内容发送到后端保存
+      alert('Text saved: ' + editorContent);
+    }
+  </script>
+</body>
+</html>

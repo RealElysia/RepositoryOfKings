@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>嘻嘻购物</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+		<style>
+			li:hover {
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="alert alert-primary">
+			<strong style="margin-left: 40%;">欢迎来到嘻嘻购物中心，祝你购物愉快</strong>
+		</div>
+		<nav class="navbar navbar-expand-sm navbar-dark bg-info">
+			<div class="container-fluid">
+				<h3 class="navbar-brand text-success">嘻嘻购物</h3>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="mynavbar">
+					<ul class="navbar-nav me-auto">
+						<li class="nav-item">
+							<a class="nav-link text-body" data-type="all">全部</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-body" data-type="手机">手机</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-body" data-type="电脑">电脑</a>
+						</li>
+					</ul>
+					<form class="d-flex" id="search">
+						<input class="form-control" type="text" placeholder="输入商品名搜索" aria-label="Search" id="sitem">
+						<button class="btn btn-primary" type="submit">
+							<i class="bi bi-search"></i>
+						</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<!-- 主容器 -->
+		<div class="container mt-3">
+			<!-- 宝贝卡片 -->
+			<div class="row gy-5" id="card" style="margin-top: 5px;">
+				{% for item in resp %}
+				<div class="col-md-4 mb-4">
+					<div class="card h-100">
+						<div class="row g-0">
+							<div class="col-md-6">
+								<div class="card-body">
+									<h5 class="card-title"><span class="itemName">{{item.name}}</span></h5>
+									<p class="card-text">编号：<span class="itemId">{{item.id}}</span></p>
+									<p class="card-text">品牌：<span class="itemBrand">{{item.brand}}</span></p>
+									<p class="card-text">类型：<span class="itemType">{{item.type}}</span></p>
+									<p class="card-text">价格：¥<span class="itemPrice">{{item.price}}</span></p>
+									<p class="card-text">销量：<span class="itemSales">{{item.sales}}</span></p>
+									<p class="card-text">库存：<span class="iteminventory">{{item.inventory}}</span></p>
+								</div>
+							</div>
+							<div class="col-md-4" style="margin-top: 80px; margin-left: 20px;">
+								<img src="../static/user/{{item.pic_name}}" class="img-fluid rounded-start" alt="{{item.name}}">
+							</div>
+						</div>
+						<div class="btn-group">
+							<button type="button" class="btn btn-outline-primary addToCart">
+								<i class="fas fa-shopping-cart">加入购物车</i>
+							</button>
+							<button type="button" class="btn btn-outline-primary buyNow" data-bs-toggle="modal" data-bs-target="#buyModal">
+								<i class="fas fa-wallet">立即购买</i>
+							</button>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+		<!-- 购买页模态框 -->
+		<div class="modal" id="buyModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				  <!-- 模态框头部 -->
+					<div class="modal-header">
+						<h4 class="modal-title">确认订单</h4>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<!-- 模态框内容 -->
+					<div class="modal-body" id="payNow"></div> 
+				</div>
+			</div>
+		</div>
+		<!-- 详情页 -->
+		<div class="modal" id="define">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				  <!-- 模态框头部 -->
+					<div class="modal-header">
+						<h4 class="modal-title">确认订单</h4>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<!-- 模态框内容 -->
+					<div class="modal-body"></div> 
+				</div>
+			</div>
+		</div>
+		<!-- 充值钱包 -->
+		<div class="modal" id="changeMod">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!-- 模态框头部 -->
+					<div class="modal-header">
+						<h4 class="modal-title">充值钱包</h4>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<!-- 模态框内容 -->
+					<div class="modal-body">
+						<form id="cform">
+							<label for="change" class="form-label">充值钱包：</label>
+							<input class="form-control" list="case" name="change" id="change" placeholder="输入或选择充值的金额">
+							<datalist id="case">
+								<option value="100">
+								<option value="500">
+								<option value="1000">
+								<option value="5000">
+								<option value="10000">
+							</datalist>
+							<button type="submit" class="btn btn-primary mt-3" style="margin-left: 360px;">立即充值</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid py-3 bg-light fixed-bottom">
+			<div class="row">
+				<div class="col-md-6 offset-md-5">
+					<div class="d-flex justify-content-between align-items-center" style="margin-left: 100px;">
+						<div >我的钱包：￥<span id="myWallet">{{wallet}}</span></div>
+						<div >总计:￥<span id="prices">0</span></div>
+						<div >总计:<span id="count">0</span>件宝贝</div>
+						<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#define">去支付/详情</button>
+						<button class="btn btn-primary ms-1" id="changeBtn" data-bs-toggle="modal" data-bs-target="#changeMod">钱包充值</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../static/js/buy.js"></script>
+	</body>
+</html>
