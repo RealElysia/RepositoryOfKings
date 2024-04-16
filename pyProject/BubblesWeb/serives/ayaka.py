@@ -19,9 +19,3 @@ def query_info():
         with app.app_context():
             elysia = Wife.query.filter_by(name='爱莉希雅').first()
         return json.dumps(elysia.story)
-
-
-if __name__ == '__main__':
-    with app.app_context():
-        e = Wife.query.filter_by(name='爱莉希雅').first()
-    print(e.story['story1'])

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>嘻嘻购物</title>
+    <title>超级泡泡</title>
 	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
 	<script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
 	<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="alert alert-primary">
-	<strong style="margin-left: 40%;">欢迎来到嘻嘻购物中心，祝你购物愉快</strong>
+	<strong style="margin-left: 40%;">欢迎来到超级泡泡</strong>
 </div>
 <div class="container mt-5">
 	<h3 style="margin-left: 50%; color: pink;">账号注册</h3>
@@ -78,16 +78,12 @@
 		}
 		return valid;
 	}
-	// 检测开关状态
-	seller.addEventListener('change', function(){
-		this.value = this.checked ? '1' : '0'
-	})
 	// 表单提交
 	form.addEventListener('submit', function(event){
 		event.preventDefault()
 		if (validateUser(user) && validatePwd(pwd))
 		{
-			const data = {user: user.value, pwd:pwd.value, seller: seller.value}
+			const data = {user: user.value, pwd:pwd.value}
 			$.ajax({
 				url: '/addUser',
 				data: data,
@@ -98,7 +94,7 @@
 						alert(resp.msg)
 					}else{
 						alert('注册成功！你的ID是：'+resp.id)
-						window.location='/login'
+						window.location='/'
 					}
 				}
 			})

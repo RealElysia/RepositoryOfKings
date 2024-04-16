@@ -3,31 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Text Editor</title>
-  <style>
-    .editor {
-      width: 400px;
-      height: 200px;
-      border: 1px solid #ccc;
-      padding: 10px;
-      font-family: Arial, sans-serif;
-    }
-  </style>
+  <title>发布文章</title>
+  <!-- 引入layui样式 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/layui/2.9.8/css/layui.css" />
 </head>
 <body>
-  <div class="editor" contenteditable="true" id="editor">
-    <!-- 初始文本内容 -->
-    This is a simple text editor.
+  <div class="layui-container" style="margin-top: 50px;">
+    <div class="layui-row">
+      <div class="layui-col-md-offset2 layui-col-md8">
+        <form class="layui-form" action="">
+          <div class="layui-form-item">
+            <label class="layui-form-label">标题</label>
+            <div class="layui-input-block">
+              <input type="text" name="title" lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">正文</label>
+            <div class="layui-input-block">
+              <textarea name="content" id="editor" style="display: none;"></textarea>
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <div class="layui-input-block">
+              <button class="layui-btn" lay-submit lay-filter="formSubmit">提交</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
-  <button onclick="saveText()">Save</button>
 
+  <!-- 引入layui.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/layui/2.9.8/layui.js"></script>
   <script>
-    function saveText() {
-      // 获取编辑器内容
-      var editorContent = document.getElementById('editor').innerText;
-      // 可以将编辑器内容发送到后端保存
-      alert('Text saved: ' + editorContent);
-    }
+    layui.use('form', function(){
+      var form = layui.form;
+      
+      // 监听提交按钮
+      form.on('submit(formSubmit)', function(data){
+        // 这里可以写提交逻辑，比如Ajax提交表单数据等
+        
+        // 阻止表单跳转
+        return false;
+      });
+
+      // 创建富文本编辑器
+      layui.use('layedit', function(){
+        var layedit = layui.layedit;
+        layedit.build('editor'); // 建立编辑器
+      });
+    });
   </script>
 </body>
 </html>

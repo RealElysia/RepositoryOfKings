@@ -28,22 +28,25 @@
 					<span style="font-size: 16px;">{{art.content}}</span>
 				</div>
 				<div class="card-footer">
-					<button class="layui-btn layui-btn-primary layui-border-blue" onclick="changeStyle(this)" data-art-id="{{art.id}}">
-						<i class="layui-icon layui-icon-praise" style="color: deepskyblue;"></i>
+					<button class="layui-btn layui-btn-primary layui-border-blue"         onclick="changeStyle(this)" data-art-id="{{art.id}}">
+						<i class="layui-icon layui-icon-praise"      style="color: deepskyblue;"></i>
 						点个赞吧
 					</button>
-					<button class="layui-btn layui-bg-blue" type="button" onclick="artComment(this)" data-art-id="{{art.id}}" data-bs-toggle="collapse" data-bs-target="#comment-area-{{art.id}}">
+					<button class="layui-btn layui-bg-blue" type="button" onclick="queryComment(this)" data-art-id="{{art.id}}" data-bs-toggle="collapse" data-bs-target="#comment-area-{{art.id}}">
 						参与评论
 					</button>
-					<span id="agree-{{art.id}}" style="margin-left: 10px;"><i class="layui-icon layui-icon-heart-fill" style="color: deepskyblue"></i>{{art.agree}}</span>人已赞
+					<span id="agree-{{art.id}}" style="margin-left: 10px;"><i class="layui-icon layui-icon-heart-fill"       style="color: red"></i>{{art.agree}}</span>人已赞
 					<div id="comment-area-{{art.id}}" class="collapse">
 						<div class="layui-form">
-						    <input type="text" style="margin-top: 10px;" lay-affix="release" lay-filter="release" lay-options="{split: true}" placeholder="说点什么…" class="layui-input">
+							<div class="layui-input-group">
+								<input id="user-comment" type="text" style="margin-top: 10px;width: 800px;" placeholder="说点什么…" class="layui-input">
+								<div class="layui-input-suffix">
+									<button type="button" data-art-id="{{art.id}}" onclick="commentSubmit(this)" class="layui-btn layui-bg-blue">提交评论</button>
+								</div>
+							</div>
 						</div>
 						<hr />
-						<div id="comments-{{art.id}}">
-							
-						</div>
+						<div id="comments-{{art.id}}"></div>
 					</div>
 				</div>
 			</div>
@@ -60,23 +63,12 @@
 					<div class="bg-secondary text-white">
 						<span style="font-size: 1.25rem;">发布帖子，开始你的创作大神之路吧</span>
 					</div><br />
-					<button type="button" class="btn btn-outline-primary btn-lg">开始创作</button>
+					<button type="button" class="btn btn-outline-primary btn-lg" onclick="addArtical()">开始创作</button>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 <script src="../static/js/article.js"></script>
-<script>
-	layui.use(function(){
-		var form = layui.form
-		
-		form.on('input-affix(release)', function(data){
-			var elem = data.elem; // 输入框
-			var value = elem.value;
-			alert('输入框测试')
-		})
-	})
-</script>
 </body>
 </html>

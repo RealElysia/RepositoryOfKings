@@ -29,5 +29,5 @@ def create_app():
 
 
 if __name__ == '__main__':
-    sk = create_app()
-    sk.run(debug=True)
+    app = create_app()
+    app.run()
