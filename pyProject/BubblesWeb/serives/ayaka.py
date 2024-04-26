@@ -24,7 +24,7 @@ def query_info():
 
 @bp.route('/amusic')
 def bg_music():
-    return send_file('static/华散之缘 Hanachirusato.mp3', mimetype='audio/mpeg')
+    return send_file('static/Hanachirusato.mp3', mimetype='audio/mpeg')
 
 
 @bp.route('/vd_ayaka')
