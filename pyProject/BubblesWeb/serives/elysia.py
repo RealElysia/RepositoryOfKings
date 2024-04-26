@@ -1,4 +1,8 @@
 import json
+import sys
+
+sys.path.append('/BubblesWeb/')
+
 from flask import render_template, request, Blueprint, send_file
 from flask_login import login_required
 from BubblesWeb.model import app, Wife

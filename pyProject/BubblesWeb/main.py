@@ -9,6 +9,8 @@ def create_app():
     lm = LoginManager()
     lm.init_app(app)
     lm.login_view = 'basic.login'
+    import sys
+    sys.path.append('/BubblesWeb/')
     from BubblesWeb.model import User
     from BubblesWeb.model import app as a
 

@@ -1,4 +1,6 @@
 import json
+import sys
+sys.path.append('/BubblesWeb/')
 from flask import render_template, request, Blueprint
 from flask_login import login_user
 from werkzeug.security import generate_password_hash, check_password_hash
