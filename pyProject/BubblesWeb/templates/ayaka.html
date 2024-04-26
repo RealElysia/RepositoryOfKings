@@ -3,8 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <title>神里绫华</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.net/layui/2.9.4/css/layui.css"          />
+	<script src="https://cdn.staticfile.net/layui/2.9.4/layui.js"></script>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<style>
+		.img-head{
+			width: 70%; 
+			height: 70%;
+			margin-left: 60px;
+			margin-top: 50px;
+		}
+		.lb {
+			width: 840px;
+			height: 480px;
+		}
+		/* 设置背景图片 */
+		body {
+		    background-image: url('../static/ayaka/ayaka-bg.jpg');
+		    background-size: cover;
+			background-repeat: no-repeat;
+		}
+		/* 设置半透明效果 */
+		body::before {
+		    content: '';
+		    position: fixed;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		    background-color: rgba(255, 255, 255, 0.8); 
+			z-index: -1;
+		}
+		#bgmusic {
+			display: none;
+		}
+		p {
+			margin: 5px;
+		}
+		.video-card {
+			background-color: transparent;
+		}
+	</style>
 </head>
 <body>
-
+	<div class="layui-row">
+		<audio id="bgmusic" controls loop autoplay>
+			<source src="/amusic" type="audio/mpeg">
+			原神神里绫华角色曲-华散之缘-HoYoMix
+		</audio>
+		<div class="layui-col-md3">
+			<img src="../static/ice.png" class="img-head" alt="冰"/>
+		</div>
+		<div class="layui-col-md6">
+			<div class="layui-carousel" id="lb-ayaka">
+				<div carousel-item>
+					<div><img src="../static/ayaka/ayaka-1.jpg" alt="绫华-雪" class="lb" lay-on="lb-1"/></div>
+					<div><img src="../static/ayaka/ayaka-2.jpg" alt="绫华-万圣" class="lb" lay-on="lb-2"/></div>
+					<div><img src="../static/ayaka/ayaka-bg.jpg" alt="绫华-公主" class="lb" lay-on="lb-3"/></div>
+					<div><img src="../static/ayaka/ayaka-3.jpg" alt="绫华-花时来信" class="lb" lay-on="lb-4"/></div>
+					<div><img src="../static/ayaka/ayaka-4.png" alt="绫华-花时来信" class="lb" lay-on="lb-5"/></div>
+				</div>
+			</div>
+		</div>
+		<div class="layui-col-md3">
+			<img src="../static/ice.png" class="img-head" alt="冰"/>
+		</div>
+	</div>
+	<div class="layui-row">
+		<div class="layui-col-md8 layui-col-md-offset3">
+			<div class="layui-panel video-card">
+				<div style="padding: 32px;">
+					<video id="genshin" class="video-js" controls preload="auto" width="840" height="480">
+					    <source src="/vd_ayaka" type="video/mp4">
+					    【《原神》PV短片——「雪霁逢椿」】 
+					</video><br />
+					<span>视频来源米游社，仅供学习使用</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="layui-row" style="margin-left: 30px;margin-top: 20px;">
+		<div class="layui-col-md2">
+			<button type="button" data-content="1" class="layui-btn layui-btn-lg layui-btn-normal  layui-btn-radius">角色故事1</button>
+		</div>
+		<div class="layui-col-md2">
+			<button type="button" data-content="2" class="layui-btn layui-btn-lg layui-btn-normal  layui-btn-radius">角色故事2</button>
+		</div>
+		<div class="layui-col-md2">
+			<button type="button" data-content="3" class="layui-btn layui-btn-lg layui-btn-normal  layui-btn-radius">角色故事3</button>
+		</div>
+		<div class="layui-col-md2">
+			<button type="button" data-content="4" class="layui-btn layui-btn-lg layui-btn-normal  layui-btn-radius">角色故事4</button>
+		</div>
+		<div class="layui-col-md2">
+			<button type="button" data-content="5" class="layui-btn layui-btn-lg layui-btn-normal  layui-btn-radius">角色故事5</button>
+		</div>
+		<div class="layui-col-md2">
+			<button type="button" class="layui-btn layui-btn-lg layui-btn-normal layui-btn-radius" lay-on="eyes">关于神之眼</button>
+		</div>
+	</div><hr />
+	<div class="layui-footer" style="text-align: center;">
+		<span>本页面图片点击显示来源，仅供个人学习使用</span>
+	</div>
 </body>
+<script src="../static/js/ayaka.js"></script>
 </html>

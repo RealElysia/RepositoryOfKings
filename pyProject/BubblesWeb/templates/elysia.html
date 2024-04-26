@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>爱莉希雅</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
@@ -31,6 +32,14 @@
 		a:hover {
 			cursor: pointer;
 		}
+		#bg-music {
+		    display: none;
+		}
+		.vd_ely {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 	</style>
 </head>
 <body>
@@ -38,6 +47,10 @@
 		<div class="alert" style="text-align: center;">
 			<strong style="color: hotpink;">如飞花般绚烂的美丽少女--爱莉希雅</strong>
 		</div>
+		<audio id="bg-music" controls loop autoplay>
+		    <source src="/emusic" type="audio/mpeg">
+		    崩坏3动画短片「因你而在的故事」主题曲--TruE--黄龄
+		</audio>
 		<div id="elysia" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-indicators">
 			    <button type="button" data-bs-target="#elysia" data-bs-slide-to="0" class="active"></button>
@@ -75,6 +88,15 @@
 			    <span class="carousel-control-next-icon"></span>
 			</button>
 		</div>
+		<div class="card vd_ely" style="background-color: transparent;">
+			<div class="card-body">
+				<video class="video-js" controls preload="auto" width="840" height="480">
+				    <source src="/vd_elysia" type="video/mp4">
+				    崩坏3-爱莉希雅的化妆小课堂
+				</video><br />
+				<span>视频来源米游社，仅供学习使用</span>
+			</div>
+		</div>
 		<div class="alert" style="color: hotpink;">
 			<strong style="color: hotpink;">角色故事:<a data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="爱莉希雅，手机游戏《崩坏3》及其衍生作品中的角色，第一文明纪元抗崩坏组织逐火之蛾的逐火十三英桀之一，位次“Ⅱ” [3]，刻印为“真我”。自称第一文明纪元的第十三律者 [15]，实际为最早诞生于世的“人之律者”，又名“始源之律者”。">爱莉希雅</a></strong><br />
 			<button class="btn btn-primary" id="story-1" data-bs-toggle="modal" data-bs-target="#story-modal" style="margin-left: 50px;margin-top: 10px;">关于爱莉希雅-其一</button>
@@ -82,55 +104,6 @@
 			<button class="btn btn-primary" id="story-3" data-bs-toggle="modal" data-bs-target="#story-modal" style="margin-left: 50px;margin-top: 10px;">关于爱莉希雅-其三</button>
 			<button class="btn btn-primary" id="story-4" data-bs-toggle="modal" data-bs-target="#story-modal" style="margin-left: 50px;margin-top: 10px;">关于爱莉希雅-其四</button>
 			<button class="btn btn-primary" id="story-5" data-bs-toggle="modal" data-bs-target="#story-modal" style="margin-left: 50px;margin-top: 10px;">关于爱莉希雅-其五</button>
-		</div>
-		<div class="alert" style="color: hotpink;">
-			<ul class="list-group"><strong>角色语音：</strong>
-				<li class="list-group-item">
-					<div class="audio-player">
-						<span class="obc-tmpl-character__voice-content">明媚的阳光和明媚的少女······是不是很相衬呢？</span>
-						<audio controls>
-							<source type="audio/mpeg" src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/08/13/75216984/1e15275fb2a48bb6908769bd42a3697a_7634474368646485716.wav" />
-						</audio>
-					</div>
-				</li>
-				<li class="list-group-item">
-					<div class="audio-player">
-						<span>我的眼睛漂亮吗？这可不是美瞳哦，是美少女的魔法。</span>
-						<audio controls>
-							<source type="audio/mpeg" src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/08/13/75216984/45e261a4efe98cae9f9a83716d1f16d8_3540221585161965165.wav" />
-						</audio>
-					</div>
-				</li>
-				<li class="list-group-item">
-					<div class="audio-player">
-						<span class="obc-tmpl-character__voice-content">我也会阿波尼亚的读心术，比如，你在想我，对不对？</span>
-						<audio controls>
-							<source type="audio/mpeg" src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/08/13/75216984/6c89790cf0c54c814dded02d4833606d_483316301347500281.wav" />
-						</audio>
-					</div>
-				</li>
-				<li class="list-group-item">
-					<div class="audio-player">
-						<span>甜甜的点心是不是跟甜甜的少女很相配？我也这么觉得。</span>
-						<audio controls>
-							<source type="audio/mpeg" src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/08/13/75216984/46da2bd3315227c228940e6fe026fed1_1759472794454482527.wav" />
-						</audio>
-					</div>
-				</li>
-				<li class="list-group-item">
-					<div class="audio-player">
-						<span>冬天到了，来玩窗户写字吧，就写······我永远喜欢爱莉希雅！</span>
-						<audio controls>
-							<source type="audio/mpeg" src="https://uploadstatic.mihoyo.com/bh3-wiki/2022/11/02/75216984/bed4e97183a09409dfd5029cc539308a_2542275797432229860.wav" />
-						</audio>
-					</div>
-				</li>
-				<li class="list-group-item">
-					<a href="https://bbs.mihoyo.com/bh3/wiki/content/1784/detail?bbs_presentation_style=no_header">
-						更多语音请前往官方档案-米游社，一起加入爱门！
-					</a>
-				</li>
-			</ul>
 		</div>
 		<div class="modal" id="story-modal">
 		  <div class="modal-dialog">
@@ -143,9 +116,7 @@
 		      </div>
 		 
 		      <!-- 模态框内容 -->
-		      <div class="modal-body" id="modal-content">
-		        模态框内容..
-		      </div>
+		      <div class="modal-body" id="modal-content"></div>
 		    </div>
 		  </div>
 		</div>
